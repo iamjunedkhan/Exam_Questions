@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <nav class="bg-red-400 text-white text-2xl font-semibolc p-2">
+      <h1>Links</h1>
+    </nav>
+    <!-- <div class="m-3">
+      <ol
+        id="ol"
+        class="list-decimal m-3 block text-xl underline text-blue-700"
+      ></ol>
+    </div> -->
+
+    <div class="m-3">
+      <h1 class="text-4xl">Data Science Questions for Exam</h1>
+      <ol
+        id="DSOL"
+        class="list-decimal m-3 block text-xl underline text-blue-700"
+      ></ol>
+    </div>
+  </body>
+  <script>
+    let obj = [
+      {
+        title: "Oprating System By Code Help",
+        link: "https://www.youtube.com/playlist?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
+      },
+      {
+        title: "OS Notes by Code Help",
+        link: "file:///C:/Users/Lenovo/Downloads/os%20notes%20love%20babbar/os%20notes%20till%2020.pdf",
+      },
+      {
+        title: "React JS by code with harry",
+        link: "https://www.codewithharry.com/videos/react-tutorials-in-hindi-1/",
+      },
+      {
+        title: "SDE Sheet by Striver",
+        link: "https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/",
+      },
+      {
+        title: "mouse and keyboard not working",
+        link: "https://techcult.com/fix-mouse-and-keyboard-not-working-in-windows-10/",
+      },
+      {
+        title: "resume builder 1",
+        link: "https://e-resume.vercel.app/",
+      },
+    ];
+
+    let dataScienceQuestions = [
+      {
+        title: "HAdoop Architecture",
+        link: "https://www.javatpoint.com/what-is-hadoop",
+      },
+      {
+        title: "HDFS architecture",
+        link: "https://www.interviewbit.com/blog/hdfs-architecture/",
+      },
+      {
+        title: "map reduct algo works with diagram",
+        link: "https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm",
+      },
+      {
+        title: "key isuses in manageing data in hadoop",
+        link: "#",
+      },
+      {
+        title: "difference between hive and hbase",
+        link: "https://www.geeksforgeeks.org/difference-between-hive-and-hbase/",
+      },
+      {
+        title: "what is Apache PIG?",
+        link: "https://www.javatpoint.com/what-is-pig",
+      },
+      {
+        title: "what is real time data streaming",
+        link: "https://www.xenonstack.com/insights/real-time-data-streaming",
+      },
+      {
+        title: "real world application of Hadoop",
+        link: "https://data-flair.training/blogs/hadoop-applications/",
+      },
+      {
+        title:'Explain Data Science',
+        link: 'https://www.simplilearn.com/tutorials/data-science-tutorial/what-is-data-science'
+      },
+      {
+        title:'Types of Data in Data Science',
+        link: 'https://www.upgrad.com/blog/types-of-data/'
+      },
+      {
+        title:'Explain data science phases and lifeycle & write the names of tools for data science',
+        link:'https://www.javatpoint.com/data-science'
+      },
+      {
+        title:'what is big data',
+        link:'https://www.guru99.com/what-is-big-data.html'
+      }
+    ];
+    // let ol = document.getElementById("ol");
+
+    // obj.forEach((element) => {
+    //   console.log(element.title);
+    //   console.log(element.link);
+    //   let li = document.createElement("li");
+    //   li.classList.add("my-5");
+    //   li.classList.add("mx-7");
+    //   li.classList.add("transition-all");
+    //   // li.classList.add('hover:mx-8');
+    //   li.classList.add("hover:font-bold");
+    //   console.log(li);
+
+    //   let a = document.createElement("a");
+    //   a.setAttribute("href", element.link);
+    //   a.setAttribute("target", "_blank");
+    //   a.classList.add("p-2");
+    //   a.innerText = element.title;
+
+    //   console.log(a);
+
+    //   li.append(a);
+    //   ol.append(li);
+    // });
+    renderDSquestions();
+
+    function renderDSquestions() {
+      let dsol = document.getElementById("DSOL");
+
+      dataScienceQuestions.forEach((element) => {
+        console.log(element.title);
+        console.log(element.link);
+        let li = document.createElement("li");
+        li.classList.add("my-5");
+        li.classList.add("mx-7");
+        li.classList.add("transition-all");
+        li.classList.add("hover:font-bold");
+        console.log(li);
+
+        let a = document.createElement("a");
+        a.setAttribute("href", element.link);
+        a.setAttribute("target", "_blank");
+        a.classList.add("p-2");
+        a.innerText = element.title;
+
+        console.log(a);
+
+        li.append(a);
+        dsol.append(li);
+      });
+    }
+  </script>
+</html>
