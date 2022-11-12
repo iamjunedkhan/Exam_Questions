@@ -57,7 +57,7 @@
 
     let dataScienceQuestions = [
       {
-        title: "HAdoop Architecture",
+        title: "Hadoop Architecture",
         link: "https://www.javatpoint.com/what-is-hadoop",
       },
       {
@@ -145,6 +145,8 @@
         console.log(li);
 
         let a = document.createElement("a");
+        a.classList.add('text-lg');
+        // a.classList.add('');
         a.setAttribute("href", element.link);
         a.setAttribute("target", "_blank");
         a.classList.add("p-2");
