@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Links</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      
+    </style>
   </head>
 
   <body>
@@ -17,7 +20,7 @@
       <h1 class="text-4xl">Data Science Questions for Exam</h1>
       <ol
         id="DSOL"
-        class="list-decimal m-3 block text-xl underline text-blue-700"
+        class="list-decimal m-3 block text-xl   "
       ></ol>
     </div>
   </body>
@@ -104,6 +107,11 @@
         let li = document.createElement("li");
         li.classList.add("my-3");
         li.classList.add("mx-4");
+        li.classList.add("p-2");
+        li.classList.add("bg-gray-300");
+        li.classList.add("border-b-2");
+        li.classList.add("border-r-2");
+        li.classList.add("border-black");
         li.classList.add("transition-all");
         li.classList.add("hover:font-bold");
         console.log(li);
@@ -114,6 +122,8 @@
         a.setAttribute("href", element.link);
         a.setAttribute("target", "_blank");
         a.classList.add("p-2");
+        a.classList.add("hover:underline");
+        // a.classList.add("");
         a.innerText = element.title;
 
         console.log(a);
