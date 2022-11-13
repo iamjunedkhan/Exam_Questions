@@ -12,6 +12,7 @@
     <nav class="bg-red-400 text-white text-2xl font-semibolc p-2">
       <h1>Links</h1>
     </nav>
+
     <div class="m-3">
       <h1 class="text-4xl">Data Science Questions for Exam</h1>
       <ol
@@ -21,33 +22,6 @@
     </div>
   </body>
   <script>
-    let obj = [
-      {
-        title: "Oprating System By Code Help",
-        link: "https://www.youtube.com/playlist?list=PLDzeHZWIZsTr3nwuTegHLa2qlI81QweYG",
-      },
-      {
-        title: "OS Notes by Code Help",
-        link: "file:///C:/Users/Lenovo/Downloads/os%20notes%20love%20babbar/os%20notes%20till%2020.pdf",
-      },
-      {
-        title: "React JS by code with harry",
-        link: "https://www.codewithharry.com/videos/react-tutorials-in-hindi-1/",
-      },
-      {
-        title: "SDE Sheet by Striver",
-        link: "https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/",
-      },
-      {
-        title: "mouse and keyboard not working",
-        link: "https://techcult.com/fix-mouse-and-keyboard-not-working-in-windows-10/",
-      },
-      {
-        title: "resume builder 1",
-        link: "https://e-resume.vercel.app/",
-      },
-    ];
-
     let dataScienceQuestions = [
       {
         title: "Hadoop Architecture",
@@ -103,6 +77,10 @@
         link: "https://www.guru99.com/what-is-big-data.html",
       },
       {
+        title: "advantage/use cases of big data",
+        link: "https://www.simplilearn.com/benefits-of-big-data-and-analytics-article",
+      },
+      {
         title: "K means algorithm with example",
         link: "https://iamjunedkhan.github.io/Exam_Questions/nf.html",
       },
@@ -115,30 +93,6 @@
         link: "https://iamjunedkhan.github.io/Exam_Questions/nf.html",
       },
     ];
-    // let ol = document.getElementById("ol");
-
-    // obj.forEach((element) => {
-    //   console.log(element.title);
-    //   console.log(element.link);
-    //   let li = document.createElement("li");
-    //   li.classList.add("my-5");
-    //   li.classList.add("mx-7");
-    //   li.classList.add("transition-all");
-    //   // li.classList.add('hover:mx-8');
-    //   li.classList.add("hover:font-bold");
-    //   console.log(li);
-
-    //   let a = document.createElement("a");
-    //   a.setAttribute("href", element.link);
-    //   a.setAttribute("target", "_blank");
-    //   a.classList.add("p-2");
-    //   a.innerText = element.title;
-
-    //   console.log(a);
-
-    //   li.append(a);
-    //   ol.append(li);
-    // });
     renderDSquestions();
 
     function renderDSquestions() {
@@ -148,8 +102,8 @@
         console.log(element.title);
         console.log(element.link);
         let li = document.createElement("li");
-        li.classList.add("my-2");
-        li.classList.add("mx-7");
+        li.classList.add("my-3");
+        li.classList.add("mx-4");
         li.classList.add("transition-all");
         li.classList.add("hover:font-bold");
         console.log(li);
@@ -159,7 +113,7 @@
         // a.classList.add('');
         a.setAttribute("href", element.link);
         a.setAttribute("target", "_blank");
-        a.classList.add("p-1");
+        a.classList.add("p-2");
         a.innerText = element.title;
 
         console.log(a);
