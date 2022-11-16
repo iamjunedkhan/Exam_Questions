@@ -6,25 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Links</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      
-    </style>
+    <style></style>
   </head>
 
   <body>
-    <nav class="bg-red-400 text-white text-2xl font-semibolc p-2">
+    <nav
+      class="bg-red-400 text-white text-2xl font-semibolc p-2 flex justify-between"
+    >
       <h1>Links</h1>
     </nav>
 
     <div class="m-3">
-      <h1 class="text-4xl">Data Science Questions for Exam</h1>
-      <ol
-        id="DSOL"
-        class="list-decimal m-3 block text-xl   "
-      ></ol>
+      <h1 class="text-4xl" id="heading">Data Science Questions for Exam</h1>
+      <ol id="DSOL" class="list-decimal m-3 block text-xl"></ol>
     </div>
   </body>
   <script>
+    let cloudComputing = [
+      {
+        title: "Exaplain Mcculloch, Pitt's neuron model with example",
+        link: "#",
+      },
+      {
+        title: "Explain Comparison of ANN and Biological NN?",
+        link: "#",
+      },
+      {
+        title: "Explain the type of learning?",
+        link: "#",
+      },
+      {
+        title: "Discuss the application of neural network",
+        link: "#",
+      },
+      {
+        title: "Explain the Linear Separability of neural networks?",
+        link: "#",
+      },
+      {
+        title:
+          "Define different steps involved in the trainig algorithm perception",
+        link: "#",
+      },
+      {
+        title: "Explain the multiple  Adaprtive Linear Neurons (Madaline)",
+        link: "#",
+      },
+      {
+        title: "Explain the architecture  and training algorithm of Back Propagation network?",
+        link: "#",
+      }
+    ];
+
     let dataScienceQuestions = [
       {
         title: "Hadoop Architecture",
@@ -39,8 +72,8 @@
         link: "https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm",
       },
       {
-        title:'map reduce algo example (see point 4)',
-        link:'https://www.baeldung.com/cs/mapreduce-algorithm'
+        title: "map reduce algo example (see point 4)",
+        link: "https://www.baeldung.com/cs/mapreduce-algorithm",
       },
       {
         title: "key issues in managing  data in hadoop",
@@ -84,8 +117,8 @@
         link: "https://www.guru99.com/what-is-big-data.html",
       },
       {
-        title:'challenges  of Big data',
-        link:'https://www.upgrad.com/blog/major-challenges-of-big-data/'
+        title: "challenges  of Big data",
+        link: "https://www.upgrad.com/blog/major-challenges-of-big-data/",
       },
       {
         title: "advantage/use cases of big data",
@@ -104,19 +137,19 @@
         link: "https://www.javatpoint.com/linear-regression-in-machine-learning",
       },
       {
-        title:'Logistic Regression',
-        link: "https://www.javatpoint.com/logistic-regression-in-machine-learning"
-        
-      }
+        title: "Logistic Regression",
+        link: "https://www.javatpoint.com/logistic-regression-in-machine-learning",
+      },
     ];
-    renderDSquestions();
 
-    function renderDSquestions() {
+    renderDSquestions(cloudComputing, "Cloud Computing Question for Exam");
+
+    function renderDSquestions(obj, heading) {
       let dsol = document.getElementById("DSOL");
+      dsol.innerHTML = "";
+      document.getElementById("heading").innerText = heading;
 
-      dataScienceQuestions.forEach((element) => {
-        console.log(element.title);
-        console.log(element.link);
+      obj.forEach((element) => {
         let li = document.createElement("li");
         li.classList.add("my-3");
         li.classList.add("mx-4");
@@ -127,7 +160,6 @@
         li.classList.add("border-black");
         li.classList.add("transition-all");
         li.classList.add("hover:font-bold");
-        console.log(li);
 
         let a = document.createElement("a");
         a.classList.add("text-lg");
@@ -136,9 +168,6 @@
         a.classList.add("p-2");
         a.classList.add("hover:underline");
         a.innerText = element.title;
-
-        console.log(a);
-
         li.append(a);
         dsol.append(li);
       });
