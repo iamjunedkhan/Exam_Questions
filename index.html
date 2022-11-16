@@ -15,6 +15,13 @@
     >
       <h1>Links</h1>
     </nav>
+    <div id="msg" class = "bg-green-300 p-3 text-center  relative">
+      <img src="xmark.svg" alt="" id="cross" class="w-3 cursor-pointer  absolute right-2  ">
+      <p >
+        There are some topics which are not available if you find any source for them 
+        please send us on <a class="underline">juned7734@gmail.com</a>
+      </p>
+    </div>
 
     <div class="m-3">
       <h1 class="text-4xl" id="heading">Data Science Questions for Exam</h1>
@@ -200,5 +207,9 @@
         dsol.append(li);
       });
     }
+
+    document.getElementById('cross').addEventListener('click',()=>{
+      document.getElementById('msg').style.display='none'
+    })
   </script>
 </html>
