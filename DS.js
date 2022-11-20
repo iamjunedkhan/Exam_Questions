@@ -81,3 +81,30 @@ let dataScienceQuestions = [
       link: "https://www.javatpoint.com/logistic-regression-in-machine-learning",
     },
   ];
+
+
+  let arr=[
+      {
+        title:'XOR problem',
+        link:'https://iamjunedkhan.github.io/Exam_Questions/nf.html'
+      },
+      {
+        title:'ANN Model',
+        link:'https://iamjunedkhan.github.io/Exam_Questions/nf.html'
+      },
+      {
+        title:'Perception Learning model',
+        link:'https://iamjunedkhan.github.io/Exam_Questions/nf.html'
+      },
+      {
+        title:'Adaline',
+        link:'https://iamjunedkhan.github.io/Exam_Questions/nf.html'
+      },
+      {
+        title:'RBPN',
+        link:'https://iamjunedkhan.github.io/Exam_Questions/nf.html'
+      },
+      {
+        title:'Data compression and image compression',
+        link:'https://iamjunedkhan.github.io/Exam_Questions/nf.html'
+      }]
