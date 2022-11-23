@@ -15,6 +15,7 @@
     >
       <h1>Links</h1>
     </nav>
+
     <div id="msg" class="bg-green-300 p-3 text-center relative">
       <img
         src="xmark.svg"
@@ -50,7 +51,7 @@
       },
       {
         title: "Define cloud compuiting reference model ?",
-        link: "https://iamjunedkhan.github.io/Exam_Questions/nf.html",
+        link: "https://easyexamnotes.com/cloud-computing-reference-model_31/",
       },
       {
         title: "What is ECG anaylisis in cloud? Explain",
@@ -124,6 +125,7 @@
 
       obj.forEach((element) => {
         let li = document.createElement("li");
+      
         li.classList.add("my-3");
         li.classList.add("mx-4");
         li.classList.add("p-2");
@@ -142,6 +144,9 @@
         a.classList.add("hover:underline");
         a.innerText = element.title;
         li.append(a);
+        li.addEventListener('click',(e)=>{
+          navigator.clipboard.writeText(e.target.innerText);
+        })
         dsol.append(li);
       });
     }
