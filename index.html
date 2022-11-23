@@ -68,15 +68,15 @@
       },
       {
         title: "Explain the concept of fault tolerence in cloud?",
-        link: "https://iamjunedkhan.github.io/Exam_Questions/nf.html",
+        link:'https://www.javatpoint.com/fault-tolerance-in-cloud-computing',
       },
       {
         title: "write short note on: Cloud Ecosystem",
-        link: "https://iamjunedkhan.github.io/Exam_Questions/nf.html",
+        link: "https://easyexamnotes.com/cloud-ecosystem/",
       },
       {
         title: "write short note on: Cloud Analytics",
-        link: "https://iamjunedkhan.github.io/Exam_Questions/nf.html",
+        link: "https://www.splunk.com/en_us/data-insider/what-is-cloud-analytics.html",
       },
       {
         title:
@@ -142,7 +142,7 @@
         a.setAttribute("target", "_blank");
         a.classList.add("p-2");
         a.classList.add("hover:underline");
-        a.innerText = element.title;
+        a.innerText = element.title + ''+ (element.link==="https://iamjunedkhan.github.io/Exam_Questions/nf.html" ? ' (currently not available )':'');
         li.append(a);
         li.addEventListener('click',(e)=>{
           navigator.clipboard.writeText(e.target.innerText);
