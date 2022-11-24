@@ -58,6 +58,14 @@
         link: "https://www.slideshare.net/golujain/ecg-analysis-in-the-cloud",
       },
       {
+        title: "Applications of Cloud Computing (1)",
+        link: "https://www.interviewbit.com/blog/applications-of-cloud-computing/",
+      },
+      {
+        title: "Applications of Cloud Computing (2)",
+        link: "https://www.simplilearn.com/applications-of-cloud-computing-article",
+      },
+      {
         title: "Define role of cloud in social networking ?",
         link: "https://iamjunedkhan.github.io/Exam_Questions/nf.html",
       },
@@ -68,7 +76,7 @@
       },
       {
         title: "Explain the concept of fault tolerence in cloud?",
-        link:'https://www.javatpoint.com/fault-tolerance-in-cloud-computing',
+        link: "https://www.javatpoint.com/fault-tolerance-in-cloud-computing",
       },
       {
         title: "write short note on: Cloud Ecosystem",
@@ -89,8 +97,8 @@
         link: "https://www.geeksforgeeks.org/hypervisor/",
       },
       {
-        title:'Enlist the advantages of virtualization?',
-        link:'https://cloudlytics.com/virtualization-gains-popularity-as-a-viable-solution-for-enhancing-cloud-security/'
+        title: "Enlist the advantages of virtualization?",
+        link: "https://cloudlytics.com/virtualization-gains-popularity-as-a-viable-solution-for-enhancing-cloud-security/",
       },
       {
         title:
@@ -129,7 +137,7 @@
 
       obj.forEach((element) => {
         let li = document.createElement("li");
-      
+
         li.classList.add("my-3");
         li.classList.add("mx-4");
         li.classList.add("p-2");
@@ -146,11 +154,17 @@
         a.setAttribute("target", "_blank");
         a.classList.add("p-2");
         a.classList.add("hover:underline");
-        a.innerText = element.title + ''+ (element.link==="https://iamjunedkhan.github.io/Exam_Questions/nf.html" ? ' (currently not available )':'');
+        a.innerText =
+          element.title +
+          "" +
+          (element.link ===
+          "https://iamjunedkhan.github.io/Exam_Questions/nf.html"
+            ? " (currently not available )"
+            : "");
         li.append(a);
-        li.addEventListener('click',(e)=>{
+        li.addEventListener("click", (e) => {
           navigator.clipboard.writeText(e.target.innerText);
-        })
+        });
         dsol.append(li);
       });
     }
