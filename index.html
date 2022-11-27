@@ -44,16 +44,16 @@
       {
         title:
           "How would you show the difference between WebServer and WebBrowser?",
-        link: "#",
+        link: "https://www.geeksforgeeks.org/difference-between-web-browser-and-web-server/",
       },
       {
         title: "can you list the principles of effective web design",
-        link: "#",
+        link: "https://www.feelingpeaky.com/9-principles-of-good-web-design/",
       },
       {
         title:
           "how does Web Designing issues play a vital role in creating a website?",
-        link: "#",
+        link: "https://www.banksiteservices.com/https-bank-website-mandatory/",
       },
       {
         title:
@@ -141,17 +141,19 @@
 
         let a = document.createElement("a");
         a.classList.add("text-lg");
-        a.setAttribute("href", element.link);
+        a.setAttribute(
+          "href",
+          element.link === "#"
+            ? "https://iamjunedkhan.github.io/Exam_Questions/nf.html"
+            : element.link
+        );
         a.setAttribute("target", "_blank");
         a.classList.add("p-2");
         a.classList.add("hover:underline");
         a.innerText =
           element.title +
           "" +
-          (element.link ===
-          "https://iamjunedkhan.github.io/Exam_Questions/nf.html"
-            ? " (currently not available )"
-            : "");
+          (element.link === "#" ? " (currently not available )" : "");
         li.append(a);
         li.addEventListener("click", (e) => {
           navigator.clipboard.writeText(e.target.innerText);
