@@ -33,11 +33,6 @@
         >
       </p>
     </div>
-    <div class="flex justify-center sm:flex-row flex-col items-center">
-      <a  class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer" id="DMW" >Data Mining And Warehousing</a>
-      <a  class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer" id="BDH" >Big Data And Hadoop</a>
-      <a  class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer" id="WMC">Wireless And Mobile Computing</a>
-    </div>
 
     <div class="m-3">
       <h1 class="text-4xl" id="heading">Data Mining And Warehousing</h1>
@@ -45,38 +40,7 @@
     </div>
   </body>
   <script>
-    let BDH = [
-      {
-        title:"Exaplain the different characterstics of Big Data",
-        link: "https://www.javatpoint.com/data-warehouse-architecture",
-      },{
-        title: 'Explain the working and importance of Resampling',
-        link:''
-      },{
-        title:'differentiate between analysis and reporting',
-        link:''
-      },{
-        title:'what is big data? write the challenges of conventional systems',
-        link:''
-      },{
-        title:'illustrate architecture of hadoop distributed file system (HDFS)',
-        link:''
-      },{
-        title:'Exaplain Map Reduce Algorithm',
-        link:''
-      },{
-        title:'can you make a Distinction Cluster and Racks?',
-        link:''
-      },{
-        title:'write short note on 1)Name node 2)Data Node 3)Job Tracker 4)Task Tracker 5)Secondary Name Node.',
-        link:''
-      }
-    
-      
-    ];
-
-
-    let DMW = [
+    let IWT = [
       {
         title:"Explain Data Ware House Architecture.",
         link: "https://www.geeksforgeeks.org/data-warehouse-architecture/",
@@ -106,30 +70,7 @@
       
     ];
 
-    let WMC = [
-    {
-      title:"Explain Wireless and mobile computing.",
-      link: "https://www.geeksforgeeks.org/data-warehouse-architecture/",
-    }
-  
-    
-  ];
-
-  renderDSquestions(DMW, "Data Mining and Warehousing Questions for Exam");
-    
-    document.getElementById('DMW').addEventListener('click',()=>{
-      renderDSquestions(DMW, "Data Mining and Warehousing Questions for Exam");
-    })
-    
-    
-    document.getElementById('BDH').addEventListener('click',()=>{
-      renderDSquestions(BDH, "Big Data And Hadoop Questions for Exam");
-    })
-    
-    
-    document.getElementById('WMC').addEventListener('click',()=>{
-      renderDSquestions(WMC, "Wireless And Mobile Computing Questions for Exam");
-      })
+    renderDSquestions(IWT, "Data Mining and Warehousing Questions for Exam");
 
     function renderDSquestions(obj, heading) {
       let dsol = document.getElementById("DSOL");
