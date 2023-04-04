@@ -136,7 +136,7 @@
         link:'https://www.guru99.com/online-analytical-processing.html#8'
       },{
         title:'what is data mining ? briefly descibe the components of a data mining system',
-        link:'#'
+        link:'https://www.geeksforgeeks.org/data-mining/'
       },{
         title:'Briefly explain major issues and challanges of Data Mining.',
         link:'#'
@@ -277,9 +277,9 @@
         a.classList.add("p-2");
         a.classList.add("hover:underline");
         a.innerText =
-          element.title +
-          "" +
-          (element.link === "#" ? " (currently not available )" : "");
+          element.title 
+         // "" +
+         // (element.link === "#" ? "" : "");
         li.append(a);
         li.addEventListener("click", (e) => {
           navigator.clipboard.writeText(e.target.innerText);
