@@ -10,7 +10,10 @@
   </head>
 
   <body>
-    <div id="alert" class="border-2 border-black py-2 px-2 fixed top-20 hidden right-4 z-50  bg-blue-300 rounded-xl">
+    <div
+      id="alert"
+      class="border-2 border-black py-2 px-2 fixed top-20 hidden right-4 z-50 bg-blue-300 rounded-xl"
+    >
       Text copied to your clipboard
     </div>
     <nav
@@ -37,9 +40,21 @@
       </p>
     </div>
     <div class="flex justify-center sm:flex-row flex-col items-center">
-      <a  class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer" id="DMW" >Data Mining And Warehousing</a>
-      <a  class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer" id="BDH" >Big Data And Hadoop</a>
-      <a  class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer" id="WMC">Wireless And Mobile Computing</a>
+      <a
+        class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer"
+        id="DMW"
+        >Data Mining And Warehousing</a
+      >
+      <a
+        class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer"
+        id="BDH"
+        >Big Data And Hadoop</a
+      >
+      <a
+        class="underline my-1 mx-7 text-blue-600 text-lg hover:pointer cursor-pointer"
+        id="WMC"
+        >Wireless And Mobile Computing</a
+      >
     </div>
 
     <div class="m-3">
@@ -50,204 +65,236 @@
   <script>
     let BDH = [
       {
-        title:"Exaplain the different characterstics of Big Data",
+        title: "Exaplain the different characterstics of Big Data",
         link: "https://www.javatpoint.com/data-warehouse-architecture",
-      },{
-        title: 'Explain the working and importance of Resampling',
-        link:'#'
-      },{
-        title:'differentiate between analysis and reporting',
-        link:'#'
-      },{
-        title:'what is big data? write the challenges of conventional systems',
-        link:'#'
-      },{
-        title:'illustrate architecture of hadoop distributed file system (HDFS)',
-        link:'#'
-      },{
-        title:'Exaplain Map Reduce Algorithm',
-        link:'#'
-      },{
-        title:'can you make a Distinction Cluster and Racks?',
-        link:'#'
-      },{
-        title:'write short note on 1)Name node 2)Data Node 3)Job Tracker 4)Task Tracker 5)Secondary Name Node.',
-        link:'#'
       },
       {
-        title:'Explain different HDFS Demons with block diagram.',
-        link:'#'
+        title: "Explain the working and importance of Resampling",
+        link: "#",
       },
       {
-        title:'What is Map Reduce? Demostrate its working taking word count example.',
-        link:'#'
+        title: "differentiate between analysis and reporting",
+        link: "#",
       },
       {
-        title:'Examine the problem offault tolerence and its solution with refrence to HDFS',
-        link:'#'
+        title: "what is big data? write the challenges of conventional systems",
+        link: "#",
       },
       {
-        title:'Explain working and importance of resource manager YARN.',
-        link:'#'
+        title:
+          "illustrate architecture of hadoop distributed file system (HDFS)",
+        link: "#",
       },
       {
-        title:'Can you make a distinction between HIVE and RDBMS?',
-        link:'#'
+        title: "Exaplain Map Reduce Algorithm",
+        link: "#",
       },
       {
-        title:'Explain partitioning & bucket with example.',
-        link:'#'
+        title: "can you make a Distinction Cluster and Racks?",
+        link: "#",
       },
       {
-        title:'Illustrate architecture of HIVE and various types of HIVE tables',
-        link:'#'
+        title:
+          "write short note on 1)Name node 2)Data Node 3)Job Tracker 4)Task Tracker 5)Secondary Name Node.",
+        link: "#",
       },
       {
-        title:'write a short note on HIVE Query Language.',
-        link:'#'
+        title: "Explain different HDFS Demons with block diagram.",
+        link: "#",
       },
-    
-      
+      {
+        title:
+          "What is Map Reduce? Demostrate its working taking word count example.",
+        link: "#",
+      },
+      {
+        title:
+          "Examine the problem offault tolerence and its solution with refrence to HDFS",
+        link: "#",
+      },
+      {
+        title: "Explain working and importance of resource manager YARN.",
+        link: "#",
+      },
+      {
+        title: "Can you make a distinction between HIVE and RDBMS?",
+        link: "#",
+      },
+      {
+        title: "Explain partitioning & bucket with example.",
+        link: "#",
+      },
+      {
+        title:
+          "Illustrate architecture of HIVE and various types of HIVE tables",
+        link: "#",
+      },
+      {
+        title: "write a short note on HIVE Query Language.",
+        link: "#",
+      },
     ];
 
     let DMW = [
       {
-        title:"Explain Data Ware House Architecture.",
+        title: "Explain Data Ware House Architecture.",
         link: "https://www.geeksforgeeks.org/data-warehouse-architecture/",
-      },{
-        title: 'What is the need of data preprocessing',
-        link:'https://www.geeksforgeeks.org/data-preprocessing-in-data-mining/'
-      },{
-        title:'Discuss the various schematic representation in multidimensional model',
-        link:'https://www.geeksforgeeks.org/multidimensional-data-model/'
-      },{
-        title:'what is data warehousing what is the need for developing data warehouse',
+      },
+      {
+        title: "What is the need of data preprocessing",
+        link: "https://www.geeksforgeeks.org/data-preprocessing-in-data-mining/",
+      },
+      {
+        title:
+          "Discuss the various schematic representation in multidimensional model",
+        link: "https://www.geeksforgeeks.org/multidimensional-data-model/",
+      },
+      {
+        title:
+          "what is data warehousing what is the need for developing data warehouse",
         link: "https://www.geeksforgeeks.org/data-warehouse-architecture/",
-      },{
-        title:'describe 1) Data Cube 2)Bakcup & recovery',
-        link:'https://www.geeksforgeeks.org/multidimensional-data-model/ '
-        <!-- link:'https://www.geeksforgeeks.org/difference-between-backup-and-recovery/' -->
-      },{
-        title:'What is OLAP write down the charactrisctis of OLAP system.',
-        link:'https://www.guru99.com/online-analytical-processing.html#8'
-      },{
-        title:'List out the difference between OLTP & OLAP.',
-        link:'https://www.geeksforgeeks.org/difference-between-olap-and-oltp-in-dbms/'
-      },{
-        title:'discuss the OLAP operations with an example.',
-        link:'https://www.guru99.com/online-analytical-processing.html#8'
-      },{
-        title:'what is data mining ? briefly descibe the components of a data mining system',
-        link:'https://www.geeksforgeeks.org/data-mining/'
-      },{
-        title:'Briefly explain major issues and challanges of Data Mining.',
-        link:'#'
-      },{
-        title:'Discuss data Preprocessing',
-        link:'#'
-      },{
-        title:'Distinguish KDD and Data Minig.',
-        link:'#'
-      },{
-        title:'Desribe supervised learning',
-        link:'#'
-      },{
-        title:'what are probabilistic classifiers',
-        link:'#'
-      },{
-        title:'explain decision tree induction alogirthm',
-        link:'#'
-      },{
-        title:'descibe the following: 1.Ditance based algorithms 2.Rule Based algorithms',
-        link:'#'
-      }
-    
-      
+      },
+      {
+        title: "describe 1) Data Cube 2)Bakcup & recovery",
+        link: "https://www.javatpoint.com/data-warehouse-what-is-data-cube",
+        link2:
+          "https://www.geeksforgeeks.org/difference-between-backup-and-recovery/",
+      },
+      {
+        title: "What is OLAP write down the charactrisctis of OLAP system.",
+        link: "https://www.guru99.com/online-analytical-processing.html",
+      },
+      {
+        title: "List out the difference between OLTP & OLAP.",
+        link: "https://www.geeksforgeeks.org/difference-between-olap-and-oltp-in-dbms/",
+      },
+      {
+        title: "discuss the OLAP operations with an example.",
+        link: "https://www.guru99.com/online-analytical-processing.html#8",
+      },
+      {
+        title:
+          "what is data mining ? briefly descibe the components of a data mining system",
+          link:'https://www.javatpoint.com/data-mining',
+          link2: "https://www.geeksforgeeks.org/data-mining/",
+          link3: "https://www.tutorialspoint.com/what-are-the-components-of-data-mining",
+      },
+      {
+        title: "Briefly explain major issues and challanges of Data Mining.",
+        link: "#",
+      },
+      {
+        title: "Discuss data Preprocessing",
+        link: "#",
+      },
+      {
+        title: "Distinguish KDD and Data Minig.",
+        link: "https://www.javatpoint.com/kdd-vs-data-mining",
+      },
+      {
+        title: "Desribe supervised learning",
+        link: "https://www.javatpoint.com/supervised-machine-learning",
+      },
+      {
+        title: "what are probabilistic classifiers",
+        link: "#",
+      },
+      {
+        title: "explain decision tree induction alogirthm",
+        link: "https://www.javatpoint.com/decision-tree-induction",
+      },
+      {
+        title:
+          "descibe the following: 1.Ditance based algorithms 2.Rule Based algorithms",
+        link: "#",
+      },
     ];
 
     let WMC = [
-    {
-      title:"Difference between LAN,MAN and WAN with suitable example.",
-      link:'#'
-    },
-    {
-      title:'Discuss ARP and RARP protocol and write key difference between them.',
-      link:'#'
-    },
-    {
-      title:'What is routing table witb suitable diagram.',
-      link:'#'
-    },
-    {
-      title:'exaplain IPV6 address structure, address space and header',
-      link:'#'
-    },
-    {
-      title:'what is meant by three way hand shaking.',
-      link:'#'
-    },
-    {
-      title:'what is meant by Interior Gateway Protocol Exaplain?',
-      link:'#'
-    },
-    {
-      title:'How silly window syndrome is related to error during transmission?',
-      link:'#'
-    },
-    {
-      title:'what is the significance of Pseudo Header used in UDP/TCP.',
-      link:'#'
-    },
-    {
-      title:'Explain Mobile IP, Its goal and terminology.',
-      link:'#'
-    },
-    {
-      title:'Distinguish Adhoc Network Routing and Traditional IP Raouting.',
-      link:'#'
-    },
-    {
-      title:'explain three types of Routing Protocols with their features.',
-      link:'#'
-    },
-    {
-      title:'Explain IEEE 802.11 with architecture.',
-      link:'#'
-    },
-    {
-      title:'Distinguish Cellular network and WLAN.',
-      link:'#'
-    },
-    {
-      title:'Explain the terms handover and Roaming.',
-      link:'#'
-    },
-    {
-      title:'What is S-TCP and M-TCP.',
-      link:'#'
-    },
-    {
-      title:'Explain GSM Services.',
-      link:'#'
-    },
-    
-  ];
+      {
+        title: "Difference between LAN,MAN and WAN with suitable example.",
+        link: "#",
+      },
+      {
+        title:
+          "Discuss ARP and RARP protocol and write key difference between them.",
+        link: "#",
+      },
+      {
+        title: "What is routing table witb suitable diagram.",
+        link: "#",
+      },
+      {
+        title: "exaplain IPV6 address structure, address space and header",
+        link: "#",
+      },
+      {
+        title: "what is meant by three way hand shaking.",
+        link: "#",
+      },
+      {
+        title: "what is meant by Interior Gateway Protocol Exaplain?",
+        link: "#",
+      },
+      {
+        title:
+          "How silly window syndrome is related to error during transmission?",
+        link: "#",
+      },
+      {
+        title: "what is the significance of Pseudo Header used in UDP/TCP.",
+        link: "#",
+      },
+      {
+        title: "Explain Mobile IP, Its goal and terminology.",
+        link: "#",
+      },
+      {
+        title: "Distinguish Adhoc Network Routing and Traditional IP Raouting.",
+        link: "#",
+      },
+      {
+        title: "explain three types of Routing Protocols with their features.",
+        link: "#",
+      },
+      {
+        title: "Explain IEEE 802.11 with architecture.",
+        link: "#",
+      },
+      {
+        title: "Distinguish Cellular network and WLAN.",
+        link: "#",
+      },
+      {
+        title: "Explain the terms handover and Roaming.",
+        link: "#",
+      },
+      {
+        title: "What is S-TCP and M-TCP.",
+        link: "#",
+      },
+      {
+        title: "Explain GSM Services.",
+        link: "#",
+      },
+    ];
 
-  renderDSquestions(DMW, "Data Mining and Warehousing Questions for Exam");
-    
-    document.getElementById('DMW').addEventListener('click',()=>{
+    renderDSquestions(BDH, "Big Data And Hadoop Questions for Exam");
+
+    document.getElementById("DMW").addEventListener("click", () => {
       renderDSquestions(DMW, "Data Mining and Warehousing Questions for Exam");
-    })
-    
-    
-    document.getElementById('BDH').addEventListener('click',()=>{
+    });
+
+    document.getElementById("BDH").addEventListener("click", () => {
       renderDSquestions(BDH, "Big Data And Hadoop Questions for Exam");
-    })
-    
-    
-    document.getElementById('WMC').addEventListener('click',()=>{
-      renderDSquestions(WMC, "Wireless And Mobile Computing Questions for Exam");
-      })
+    });
+
+    document.getElementById("WMC").addEventListener("click", () => {
+      renderDSquestions(
+        WMC,
+        "Wireless And Mobile Computing Questions for Exam"
+      );
+    });
 
     function renderDSquestions(obj, heading) {
       let dsol = document.getElementById("DSOL");
@@ -278,19 +325,17 @@
         a.setAttribute("target", "_blank");
         a.classList.add("p-2");
         a.classList.add("hover:underline");
-        a.innerText =
-          element.title 
-         // "" +
-         // (element.link === "#" ? "" : "");
+        a.innerText = element.title;
+        // "" +
+        // (element.link === "#" ? "" : "");
         li.append(a);
         li.addEventListener("click", (e) => {
           navigator.clipboard.writeText(e.target.innerText);
-          let myalert = document.getElementById('alert');
-          myalert.classList.remove('hidden');
-          setTimeout(()=>{
-            myalert.classList.add('hidden');
-          },2000);
-
+          let myalert = document.getElementById("alert");
+          myalert.classList.remove("hidden");
+          setTimeout(() => {
+            myalert.classList.add("hidden");
+          }, 2000);
         });
         dsol.append(li);
       });
@@ -298,8 +343,6 @@
 
     document.getElementById("cross").addEventListener("click", () => {
       document.getElementById("msg").style.display = "none";
-      
-
     });
   </script>
 </html>
