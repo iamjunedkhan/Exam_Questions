@@ -83,46 +83,46 @@
       {
         title:
           "illustrate architecture of hadoop distributed file system (HDFS)",
-        link: "#",
+        link: "https://www.javatpoint.com/what-is-hadoop",
       },
       {
         title: "Exaplain Map Reduce Algorithm",
-        link: "#",
+        link: "https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm",
       },
       {
         title: "can you make a Distinction Cluster and Racks?",
-        link: "#",
+        link: "$",
       },
       {
         title:
           "write short note on 1)Name node 2)Data Node 3)Job Tracker 4)Task Tracker 5)Secondary Name Node.",
-        link: "#",
+        link: "$",
       },
       {
         title: "Explain different HDFS Demons with block diagram.",
-        link: "#",
+        link: "$",
       },
       {
         title:
           "What is Map Reduce? Demostrate its working taking word count example.",
-        link: "#",
+        link: "$",
       },
       {
         title:
-          "Examine the problem offault tolerence and its solution with refrence to HDFS",
+          "Examine the problem of fault tolerence and its solution with refrence to HDFS",
         link: "#",
       },
       {
         title: "Explain working and importance of resource manager YARN.",
-        link: "#",
+        link: "https://www.geeksforgeeks.org/hadoop-yarn-architecture/",
       },
       {
         title: "Can you make a distinction between HIVE and RDBMS?",
-        link: "#",
+        link: "https://www.geeksforgeeks.org/difference-between-rdbms-and-hive/",
       },
       {
         title: "Explain partitioning & bucket with example.",
-        link: "#",
+        link: "https://www.guru99.com/hive-partitions-buckets-example.html",
       },
       {
         title:
@@ -131,7 +131,7 @@
       },
       {
         title: "write a short note on HIVE Query Language.",
-        link: "#",
+        link: "https://www.guru99.com/hive-query-language-built-operators-functions.html" ,
       },
     ];
 
@@ -326,6 +326,9 @@
         a.innerText = element.title;
         // "" +
         // (element.link === "#" ? "" : "");
+        if(element.link==='#'){
+          li.classList.add('bg-red-200');
+        }
         li.append(a);
         li.addEventListener("click", (e) => {
           navigator.clipboard.writeText(e.target.innerText);
