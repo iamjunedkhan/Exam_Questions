@@ -215,103 +215,127 @@
       {
         title: "Difference between LAN,MAN and WAN with suitable example.",
         link: "https://www.geeksforgeeks.org/difference-between-lan-man-and-wan/",
+        status: "Mark as Done",
       },
       {
         title:
           "Discuss ARP and RARP protocol and write key difference between them.",
         link: "https://www.geeksforgeeks.org/difference-between-arp-and-rarp/",
+        status: "Mark as Done",
       },
       {
         title: "What is routing table witb suitable diagram.",
         link: "https://www.geeksforgeeks.org/routing-tables-in-computer-network/",
+        status: "Mark as Done",
       },
       {
         title: "exaplain IPV6 address structure, address space and header",
         link: "https://youtu.be/U3rGOTxwXAI",
+        status: "Mark as Done",
       },
       {
         title: "what is meant by three way hand shaking.",
         link: "https://www.guru99.com/tcp-3-way-handshake.html",
+        status: "Mark as Done",
       },
       {
         title: "what is meant by Interior Gateway Protocol Exaplain?",
         link: "https://www.techopedia.com/definition/26132/interior-gateway-protocol-igp",
+        status: "Mark as Done",
       },
       {
         title:
           "How silly window syndrome is related to error during transmission?",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title: "what is the significance of Pseudo Header used in UDP/TCP.",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title: "Explain Mobile IP, Its goal and terminology.",
         link: "https://www.geeksforgeeks.org/mobile-internet-protocol-or-mobile-ip/",
+        status: "Mark as Done",
       },
       {
         title: "Distinguish Adhoc Network Routing and Traditional IP Raouting.",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title: "explain three types of Routing Protocols with their features.",
         link: "https://www.geeksforgeeks.org/classes-of-routing-protocols/",
+        status: "Mark as Done",
       },
       {
         title: "Explain IEEE 802.11 with architecture.",
         link: "https://www.tutorialspoint.com/what-are-ieee-802-11-networks",
+        status: "Mark as Done",
       },
       {
         title: "Distinguish Cellular network and WLAN.",
         link: "https://www.geeksforgeeks.org/difference-between-cellular-and-wi-fi-networks/",
+        status: "Mark as Done",
       },
       {
         title: "Explain the terms handover ",
         link: "https://www.geeksforgeeks.org/handoff-in-cellular-telecommunications/",
+        status: "Mark as Done",
       },
       {
         title: "Explain the terms Roaming ",
         link: "/roaming.html",
+        status: "Mark as Done",
       },
       {
         title: "What is S-TCP and M-TCP.",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title: "Explain GSM Services.",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title: "Write Architecture of TCP/IP Protocol.",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title:
           "Explain Interior Gateway Protocol and Exterior Gateway protocol?",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title: "Explain concept of spread spectrum",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title:
           "Write difference between Ad – hoc Network routing and Traditional IP routing",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title: "Explain I-TCP , S-TCP , M-TCP",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title: "What do you mean by M-Commerce also write pros & Cons ",
         link: "#",
+        status: "Mark as Done",
       },
       {
         title:
           "Write example of Commercial Mobile Operating Systems and also explain them ",
         link: "#",
+        status: "Mark as Done",
       },
     ];
 
@@ -349,6 +373,8 @@
         li.classList.add("border-black");
         li.classList.add("transition-all");
         li.classList.add("hover:font-bold");
+        //        li.classList.add('flex');
+        //       li.classList.add('justify-between');
 
         let a = document.createElement("a");
         a.classList.add("text-lg");
@@ -367,7 +393,36 @@
         if (element.link === "#") {
           li.classList.add("bg-red-200");
         }
+
+        let span = document.createElement("span");
+        span.classList.add('border-2');
+        span.classList.add('border-black');
+        span.classList.add('px-2');
+        span.classList.add('rounded-lg');
+        span.classList.add('hover:cursor-pointer');
+        span.classList.add('rounded-lg');
+
+
+
+        span.innerText = element.status;
+        span.addEventListener("click", (e) => {
+          console.log("span clicked");
+          element.status = element.status === "Done" ? "Mark as Done" : "Done";
+          span.innerText = element.status;
+          if (span.innerText === "Done") {
+            li.classList.remove("bg-gray-300");
+            li.classList.add("bg-green-300");
+          }else{
+            li.classList.remove("bg-green-300");
+            li.classList.add("bg-gray-300");
+          }
+          console.log(span.innerText);
+        });
+
+        span.classList.add("float-right");
         li.append(a);
+        li.append(span);
+
         li.addEventListener("click", (e) => {
           navigator.clipboard.writeText(e.target.innerText);
           let myalert = document.getElementById("alert");
