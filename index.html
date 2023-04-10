@@ -128,11 +128,10 @@
         title:
           "Illustrate architecture of HIVE and various types of HIVE tables",
         link: "#",
-
       },
       {
         title: "write a short note on HIVE Query Language.",
-        link: "https://www.guru99.com/hive-query-language-built-operators-functions.html" ,
+        link: "https://www.guru99.com/hive-query-language-built-operators-functions.html",
       },
     ];
 
@@ -257,7 +256,7 @@
       },
       {
         title: "explain three types of Routing Protocols with their features.",
-        link: "#",
+        link: "https://www.geeksforgeeks.org/classes-of-routing-protocols/",
       },
       {
         title: "Explain IEEE 802.11 with architecture.",
@@ -272,8 +271,8 @@
         link: "https://www.geeksforgeeks.org/handoff-in-cellular-telecommunications/",
       },
       {
-        title:'Explain the terms Roaming ',
-        link:'/roaming.html'
+        title: "Explain the terms Roaming ",
+        link: "/roaming.html",
       },
       {
         title: "What is S-TCP and M-TCP.",
@@ -283,9 +282,40 @@
         title: "Explain GSM Services.",
         link: "#",
       },
+      {
+        title: "Write Architecture of TCP/IP Protocol.",
+        link: "#",
+      },
+      {
+        title:
+          "Explain Interior Gateway Protocol and Exterior Gateway protocol?",
+        link: "#",
+      },
+      {
+        title: "Explain concept of spread spectrum",
+        link: "#",
+      },
+      {
+        title:
+          "Write difference between Ad – hoc Network routing and Traditional IP routing",
+        link: "#",
+      },
+      {
+        title: "Explain I-TCP , S-TCP , M-TCP",
+        link: "#",
+      },
+      {
+        title: "What do you mean by M-Commerce also write pros & Cons ",
+        link: "#",
+      },
+      {
+        title:
+          "Write example of Commercial Mobile Operating Systems and also explain them ",
+        link: "#",
+      },
     ];
 
-    renderDSquestions(WMC,"Wireless And Mobile Computing Questions for Exam");
+    renderDSquestions(WMC, "Wireless And Mobile Computing Questions for Exam");
 
     document.getElementById("DMW").addEventListener("click", () => {
       renderDSquestions(DMW, "Data Mining and Warehousing Questions for Exam");
@@ -296,7 +326,10 @@
     });
 
     document.getElementById("WMC").addEventListener("click", () => {
-      renderDSquestions(WMC,"Wireless And Mobile Computing Questions for Exam");
+      renderDSquestions(
+        WMC,
+        "Wireless And Mobile Computing Questions for Exam"
+      );
     });
 
     function renderDSquestions(obj, heading) {
@@ -331,8 +364,8 @@
         a.innerText = element.title;
         // "" +
         // (element.link === "#" ? "" : "");
-        if(element.link==='#'){
-          li.classList.add('bg-red-200');
+        if (element.link === "#") {
+          li.classList.add("bg-red-200");
         }
         li.append(a);
         li.addEventListener("click", (e) => {
